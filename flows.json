@@ -249,6 +249,25 @@
         }
     },
     {
+        "id": "4272d78f.88e61",
+        "type": "ui_tab",
+        "name": "Test Docker",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "cf047724.d75058",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "4272d78f.88e61",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
         "id": "b7e5ca94de37d474",
         "type": "ui_button",
         "z": "aafdfce02a9ba84e",
