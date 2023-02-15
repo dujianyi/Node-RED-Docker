@@ -3,14 +3,14 @@
         "id": "aafdfce02a9ba84e",
         "type": "tab",
         "label": "Phone SLA",
-        "disabled": true,
+        "disabled": false,
         "info": ""
     },
     {
         "id": "84fa983.41c71e8",
         "type": "tab",
         "label": "Flow 1",
-        "disabled": false,
+        "disabled": true,
         "info": ""
     },
     {
