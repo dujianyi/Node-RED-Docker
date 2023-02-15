@@ -3,6 +3,13 @@
         "id": "aafdfce02a9ba84e",
         "type": "tab",
         "label": "Phone SLA",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "84fa983.41c71e8",
+        "type": "tab",
+        "label": "Flow 1",
         "disabled": false,
         "info": ""
     },
@@ -1595,5 +1602,80 @@
                 "6bb95e8f119f1533"
             ]
         ]
+    },
+    {
+        "id": "11821ccd.d31f5b",
+        "type": "mqtt in",
+        "z": "84fa983.41c71e8",
+        "name": "",
+        "topic": "textInput",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "a728dc6475e6534e",
+        "x": 580,
+        "y": 220,
+        "wires": [
+            [
+                "68d31f0b.692788"
+            ]
+        ]
+    },
+    {
+        "id": "1fd0ec15.255984",
+        "type": "mqtt out",
+        "z": "84fa983.41c71e8",
+        "name": "",
+        "topic": "textInput",
+        "qos": "",
+        "retain": "",
+        "broker": "a728dc6475e6534e",
+        "x": 450,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "676343b9.b95f8c",
+        "type": "ui_numeric",
+        "z": "84fa983.41c71e8",
+        "name": "",
+        "label": "numeric",
+        "tooltip": "",
+        "group": "cf047724.d75058",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "textInput",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 300,
+        "y": 220,
+        "wires": [
+            [
+                "1fd0ec15.255984"
+            ]
+        ]
+    },
+    {
+        "id": "68d31f0b.692788",
+        "type": "ui_text",
+        "z": "84fa983.41c71e8",
+        "group": "cf047724.d75058",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 710,
+        "y": 220,
+        "wires": []
     }
 ]
