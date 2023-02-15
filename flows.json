@@ -1,1 +1,64 @@
-[{"id":"3af82246.3634ae","type":"tab","label":"Flow 1","disabled":false,"info":""}]
+[
+    {
+        "id": "3af82246.3634ae",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "55dd0376.f7c64c",
+        "type": "http in",
+        "z": "3af82246.3634ae",
+        "name": "",
+        "url": "/hello",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 460,
+        "y": 360,
+        "wires": [
+            [
+                "c656aba7.944288"
+            ]
+        ]
+    },
+    {
+        "id": "c2380ca8.0463",
+        "type": "http response",
+        "z": "3af82246.3634ae",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 800,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "c656aba7.944288",
+        "type": "change",
+        "z": "3af82246.3634ae",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"text\":\"Hello\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 360,
+        "wires": [
+            [
+                "c2380ca8.0463"
+            ]
+        ]
+    }
+]
