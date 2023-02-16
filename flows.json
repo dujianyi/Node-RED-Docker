@@ -2,14 +2,14 @@
     {
         "id": "aafdfce02a9ba84e",
         "type": "tab",
-        "label": "Phone SLA",
+        "label": "SLA Printer",
         "disabled": false,
         "info": ""
     },
     {
         "id": "84fa983.41c71e8",
         "type": "tab",
-        "label": "Flow 1",
+        "label": "Test mosquitto",
         "disabled": true,
         "info": ""
     },
@@ -665,7 +665,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "change",
-        "payload": "/home/pi-admin",
+        "payload": "/userData",
         "payloadType": "str",
         "x": 130,
         "y": 100,
